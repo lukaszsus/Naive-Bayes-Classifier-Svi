@@ -1,0 +1,17 @@
+Naiwny Bayes:
+- wartość oczekiwana z danych
+- po każdym atrybucie -> ileś mi ileś sigm
+- liczyliśmy iloczyn prawdopodobieństw wartości oczekiwanych
+
+... teraz zrobimy całe prawdopodobieństwo
+
+p(C|x) = p(C)*p(x_i|C)
+
+musimy zamodelować prawd. warunkowe p(x_i|C)
+-> wylosuj klasę z Bernoulliego np. B(0,3) -> w zależności od tej wartości będziemy wyznaczali mi i sigma
+-> if class == 0:
+	mi=10, sigma=5
+else:
+	mi =20,  sigma=1 	// rozkład apriori
+
+W naiwnym bayesie etymujemy parametry danych (nie modelu generującego dane).
